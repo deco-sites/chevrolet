@@ -1,7 +1,6 @@
 import type {
   PdpReturn,
   Vehicle,
-  Vehicles,
 } from "deco-sites/chevrolet/components/types.ts";
 import type { RequestURLParam } from "deco-sites/std/functions/requestToParam.ts";
 

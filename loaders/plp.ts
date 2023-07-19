@@ -1,7 +1,4 @@
-import type {
-  PlpReturn,
-  Vehicles,
-} from "deco-sites/chevrolet/components/types.ts";
+import type { PlpReturn } from "deco-sites/chevrolet/components/types.ts";
 
 export interface Props {
   id_loja: string;
