@@ -3,22 +3,19 @@
 // This file is automatically updated during development when running `dev.ts`.
 
 import { DecoManifest } from "$live/types.ts";
-import * as $$$0 from "./loaders/pdp.ts";
-import * as $$$1 from "./loaders/plp.ts";
+import * as $$$0 from "./loaders/plp.ts";
+import * as $$$1 from "./loaders/pdp.ts";
 import * as $$$$0 from "./routes/styles.css.ts";
 import * as $$$$1 from "./routes/_app.tsx";
-import * as $$$$$$$$0 from "./sections/Banner.tsx";
+import * as $$$$$$$$0 from "./sections/ProductDetailsPage.tsx";
 import * as $$$$$$$$1 from "./sections/Gallery.tsx";
-import * as $$$$$$$$2 from "./sections/Header.tsx";
-import * as $$$$$$$$3 from "./sections/HeadingHome.tsx";
-import * as $$$$$$$$4 from "./sections/Hero.tsx";
-import * as $$$$$$$$5 from "./sections/HomeDetails.tsx";
-import * as $$$$$$$$6 from "./sections/ParagraphList.tsx";
-import * as $$$$$$$$7 from "./sections/ProductDetailsPage.tsx";
-import * as $$$$$$$$8 from "./sections/SimpleTextList.tsx";
-import * as $$$$$$$$9 from "./sections/StoreData.tsx";
-import * as $$$$$$$$10 from "./sections/StoresHome.tsx";
-import * as $$$$$$$$11 from "./sections/Theme.tsx";
+import * as $$$$$$$$2 from "./sections/Banner.tsx";
+import * as $$$$$$$$3 from "./sections/StoreData.tsx";
+import * as $$$$$$$$4 from "./sections/HeadingHome.tsx";
+import * as $$$$$$$$5 from "./sections/Theme.tsx";
+import * as $$$$$$$$6 from "./sections/StoresHome.tsx";
+import * as $$$$$$$$7 from "./sections/Header.tsx";
+import * as $$$$$$$$8 from "./sections/HomeDetails.tsx";
 import * as $live_workflows from "$live/routes/live/workflows/run.ts";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
@@ -150,8 +147,8 @@ const manifest = {
     "$live/loaders/state.ts": i2$$$0,
     "$live/loaders/workflows/events.ts": i2$$$1,
     "$live/loaders/workflows/get.ts": i2$$$2,
-    "deco-sites/chevrolet/loaders/pdp.ts": $$$0,
-    "deco-sites/chevrolet/loaders/plp.ts": $$$1,
+    "deco-sites/chevrolet/loaders/pdp.ts": $$$1,
+    "deco-sites/chevrolet/loaders/plp.ts": $$$0,
     "deco-sites/std/loaders/nuvemShop/nuvemShopProductDetailsPage.ts": i2$$$3,
     "deco-sites/std/loaders/nuvemShop/nuvemShopProductList.ts": i2$$$4,
     "deco-sites/std/loaders/nuvemShop/nuvemShopProductListingPage.ts": i2$$$5,
@@ -195,18 +192,15 @@ const manifest = {
     "$live/sections/PageInclude.tsx": i2$$$$$2,
     "$live/sections/Slot.tsx": i2$$$$$3,
     "$live/sections/UseSlot.tsx": i2$$$$$4,
-    "deco-sites/chevrolet/sections/Banner.tsx": $$$$$$$$0,
+    "deco-sites/chevrolet/sections/Banner.tsx": $$$$$$$$2,
     "deco-sites/chevrolet/sections/Gallery.tsx": $$$$$$$$1,
-    "deco-sites/chevrolet/sections/Header.tsx": $$$$$$$$2,
-    "deco-sites/chevrolet/sections/HeadingHome.tsx": $$$$$$$$3,
-    "deco-sites/chevrolet/sections/Hero.tsx": $$$$$$$$4,
-    "deco-sites/chevrolet/sections/HomeDetails.tsx": $$$$$$$$5,
-    "deco-sites/chevrolet/sections/ParagraphList.tsx": $$$$$$$$6,
-    "deco-sites/chevrolet/sections/ProductDetailsPage.tsx": $$$$$$$$7,
-    "deco-sites/chevrolet/sections/SimpleTextList.tsx": $$$$$$$$8,
-    "deco-sites/chevrolet/sections/StoreData.tsx": $$$$$$$$9,
-    "deco-sites/chevrolet/sections/StoresHome.tsx": $$$$$$$$10,
-    "deco-sites/chevrolet/sections/Theme.tsx": $$$$$$$$11,
+    "deco-sites/chevrolet/sections/Header.tsx": $$$$$$$$7,
+    "deco-sites/chevrolet/sections/HeadingHome.tsx": $$$$$$$$4,
+    "deco-sites/chevrolet/sections/HomeDetails.tsx": $$$$$$$$8,
+    "deco-sites/chevrolet/sections/ProductDetailsPage.tsx": $$$$$$$$0,
+    "deco-sites/chevrolet/sections/StoreData.tsx": $$$$$$$$3,
+    "deco-sites/chevrolet/sections/StoresHome.tsx": $$$$$$$$6,
+    "deco-sites/chevrolet/sections/Theme.tsx": $$$$$$$$5,
     "deco-sites/std/sections/Analytics.tsx": i2$$$$$5,
     "deco-sites/std/sections/configButterCMS.global.tsx": i2$$$$$6,
     "deco-sites/std/sections/configNuvemShop.tsx": i2$$$$$7,
