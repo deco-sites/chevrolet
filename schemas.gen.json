@@ -84,11 +84,8 @@
               "deco-sites/chevrolet/sections/Banner.tsx",
               "deco-sites/chevrolet/sections/Gallery.tsx",
               "deco-sites/chevrolet/sections/Header.tsx",
-              "deco-sites/chevrolet/sections/Hero.tsx",
               "deco-sites/chevrolet/sections/HomeDetails.tsx",
-              "deco-sites/chevrolet/sections/ParagraphList.tsx",
               "deco-sites/chevrolet/sections/ProductDetailsPage.tsx",
-              "deco-sites/chevrolet/sections/SimpleTextList.tsx",
               "deco-sites/chevrolet/sections/StoreData.tsx",
               "deco-sites/chevrolet/sections/StoresHome.tsx",
               "deco-sites/chevrolet/sections/Theme.tsx",
@@ -8532,57 +8529,6 @@
       ],
       "title": "deco-sites/chevrolet/components/ui/Header.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9jaGV2cm9sZXQvc2VjdGlvbnMvSGVyby50c3g=@Link": {
-      "type": "object",
-      "properties": {
-        "title": {
-          "type": "string",
-          "title": "Title"
-        },
-        "href": {
-          "type": "string",
-          "title": "Href"
-        }
-      },
-      "required": [
-        "title",
-        "href"
-      ],
-      "title": "{{{title}}} - {{{href}}}"
-    },
-    "ZGVjby1zaXRlcy9jaGV2cm9sZXQvc2VjdGlvbnMvSGVyby50c3g=@Props": {
-      "type": "object",
-      "properties": {
-        "logo": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
-          "title": "Logo"
-        },
-        "title": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Title"
-        },
-        "headline": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "format": "textarea",
-          "title": "Headline"
-        },
-        "links": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/ZGVjby1zaXRlcy9jaGV2cm9sZXQvc2VjdGlvbnMvSGVyby50c3g=@Link"
-          },
-          "title": "Links"
-        }
-      },
-      "required": [],
-      "title": "deco-sites/chevrolet/sections/Hero.tsx@Props"
-    },
     "ZGVjby1zaXRlcy9jaGV2cm9sZXQvY29tcG9uZW50cy91aS9Ib21lRGV0YWlscy50c3g=@StoreInformations": {
       "type": "object",
       "properties": {
@@ -8636,50 +8582,6 @@
       ],
       "title": "StoreInformations"
     },
-    "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML": {
-      "type": "string",
-      "format": "html",
-      "title": "HTML"
-    },
-    "ZGVjby1zaXRlcy9jaGV2cm9sZXQvc2VjdGlvbnMvUGFyYWdyYXBoTGlzdC50c3g=@Paragraph": {
-      "type": "object",
-      "properties": {
-        "title": {
-          "type": "string",
-          "title": "Title"
-        },
-        "text": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
-          "title": "Text"
-        }
-      },
-      "required": [
-        "title",
-        "text"
-      ],
-      "title": "{{{title}}}"
-    },
-    "ZGVjby1zaXRlcy9jaGV2cm9sZXQvc2VjdGlvbnMvUGFyYWdyYXBoTGlzdC50c3g=@Props": {
-      "type": "object",
-      "properties": {
-        "title": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Title"
-        },
-        "items": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/ZGVjby1zaXRlcy9jaGV2cm9sZXQvc2VjdGlvbnMvUGFyYWdyYXBoTGlzdC50c3g=@Paragraph"
-          },
-          "title": "Items"
-        }
-      },
-      "required": [],
-      "title": "deco-sites/chevrolet/sections/ParagraphList.tsx@Props"
-    },
     "ZGVjby1zaXRlcy9jaGV2cm9sZXQvY29tcG9uZW50cy90eXBlcy50cw==@PdpReturn|null": {
       "anyOf": [
         {
@@ -8703,63 +8605,6 @@
         "page"
       ],
       "title": "deco-sites/chevrolet/components/ui/ProductDetailsPage.tsx@Props"
-    },
-    "ZGVjby1zaXRlcy9jaGV2cm9sZXQvc2VjdGlvbnMvU2ltcGxlVGV4dExpc3QudHN4@Item": {
-      "type": "object",
-      "properties": {
-        "text": {
-          "type": "string",
-          "title": "Text"
-        }
-      },
-      "required": [
-        "text"
-      ],
-      "title": "{{{text}}}"
-    },
-    "ZGVjby1zaXRlcy9jaGV2cm9sZXQvc2VjdGlvbnMvU2ltcGxlVGV4dExpc3QudHN4@SimpleText": {
-      "type": "object",
-      "properties": {
-        "title": {
-          "type": "string",
-          "title": "Title"
-        },
-        "items": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/ZGVjby1zaXRlcy9jaGV2cm9sZXQvc2VjdGlvbnMvU2ltcGxlVGV4dExpc3QudHN4@Item"
-          },
-          "format": "textarea",
-          "title": "Items"
-        }
-      },
-      "required": [
-        "title",
-        "items"
-      ],
-      "title": "{{{title}}}"
-    },
-    "ZGVjby1zaXRlcy9jaGV2cm9sZXQvc2VjdGlvbnMvU2ltcGxlVGV4dExpc3QudHN4@Props": {
-      "type": "object",
-      "properties": {
-        "title": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Title"
-        },
-        "items": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/ZGVjby1zaXRlcy9jaGV2cm9sZXQvc2VjdGlvbnMvU2ltcGxlVGV4dExpc3QudHN4@SimpleText"
-          },
-          "format": "textarea",
-          "title": "Items"
-        }
-      },
-      "required": [],
-      "title": "deco-sites/chevrolet/sections/SimpleTextList.tsx@Props"
     },
     "ZGVjby1zaXRlcy9jaGV2cm9sZXQvY29tcG9uZW50cy91aS9TdG9yZURhdGEudHN4@StoreInformations": {
       "type": "object",
@@ -8834,56 +8679,87 @@
       ],
       "title": "deco-sites/chevrolet/components/ui/StoreData.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9jaGV2cm9sZXQvY29tcG9uZW50cy91aS9TdG9yZXNIb21lLnRzeA==@StoreInformations": {
+    "ZGVjby1zaXRlcy9jaGV2cm9sZXQvY29tcG9uZW50cy91aS9TdG9yZXNIb21lLnRzeA==@Profile": {
       "type": "object",
       "properties": {
         "idLoja": {
           "type": "string",
+          "description": "Store id on Leadfy pannel",
           "title": "Id Loja"
+        },
+        "whatsappNumber": {
+          "type": "string",
+          "title": "Whatsapp Number"
         },
         "logo": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
           "title": "Logo"
-        },
-        "banner": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
-          "title": "Banner"
-        },
-        "bannerAlt": {
-          "type": "string",
-          "title": "Banner Alt"
-        },
-        "title": {
-          "type": "string",
-          "title": "Title"
-        },
-        "subtitle": {
-          "type": "string",
-          "title": "Subtitle"
-        },
-        "text": {
-          "type": "string",
-          "title": "Text"
-        },
-        "whatsapp": {
-          "type": "string",
-          "title": "Whatsapp"
-        },
-        "label": {
-          "type": "string",
-          "title": "Label"
         }
       },
       "required": [
         "idLoja",
-        "logo",
-        "banner",
-        "bannerAlt",
-        "title",
-        "subtitle",
-        "text",
-        "whatsapp",
-        "label"
+        "whatsappNumber",
+        "logo"
+      ],
+      "title": "Profile"
+    },
+    "ZGVjby1zaXRlcy9jaGV2cm9sZXQvY29tcG9uZW50cy91aS9TdG9yZXNIb21lLnRzeA==@StoreInformations": {
+      "type": "object",
+      "properties": {
+        "label": {
+          "type": "string",
+          "title": "Label"
+        },
+        "profile": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jaGV2cm9sZXQvY29tcG9uZW50cy91aS9TdG9yZXNIb21lLnRzeA==@Profile",
+          "title": "Profile"
+        },
+        "banner": {
+          "type": "object",
+          "properties": {
+            "image": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+              "title": "Image"
+            },
+            "altText": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Alt Text"
+            }
+          },
+          "required": [],
+          "title": "Banner"
+        },
+        "content": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string",
+              "title": "Title"
+            },
+            "subtitle": {
+              "type": "string",
+              "title": "Subtitle"
+            },
+            "text": {
+              "type": "string",
+              "title": "Text"
+            }
+          },
+          "required": [
+            "title",
+            "subtitle",
+            "text"
+          ],
+          "title": "Content"
+        }
+      },
+      "required": [
+        "label",
+        "profile",
+        "content"
       ],
       "title": "StoreInformations"
     },
@@ -12248,27 +12124,6 @@
         }
       }
     },
-    "ZGVjby1zaXRlcy9jaGV2cm9sZXQvc2VjdGlvbnMvSGVyby50c3g=": {
-      "title": "deco-sites/chevrolet/sections/Hero.tsx",
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9jaGV2cm9sZXQvc2VjdGlvbnMvSGVyby50c3g=@Props"
-        }
-      ],
-      "required": [
-        "__resolveType"
-      ],
-      "properties": {
-        "__resolveType": {
-          "type": "string",
-          "enum": [
-            "deco-sites/chevrolet/sections/Hero.tsx"
-          ],
-          "default": "deco-sites/chevrolet/sections/Hero.tsx"
-        }
-      }
-    },
     "ZGVjby1zaXRlcy9jaGV2cm9sZXQvc2VjdGlvbnMvSG9tZURldGFpbHMudHN4": {
       "title": "deco-sites/chevrolet/sections/HomeDetails.tsx",
       "type": "object",
@@ -12282,27 +12137,6 @@
             "deco-sites/chevrolet/sections/HomeDetails.tsx"
           ],
           "default": "deco-sites/chevrolet/sections/HomeDetails.tsx"
-        }
-      }
-    },
-    "ZGVjby1zaXRlcy9jaGV2cm9sZXQvc2VjdGlvbnMvUGFyYWdyYXBoTGlzdC50c3g=": {
-      "title": "deco-sites/chevrolet/sections/ParagraphList.tsx",
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9jaGV2cm9sZXQvc2VjdGlvbnMvUGFyYWdyYXBoTGlzdC50c3g=@Props"
-        }
-      ],
-      "required": [
-        "__resolveType"
-      ],
-      "properties": {
-        "__resolveType": {
-          "type": "string",
-          "enum": [
-            "deco-sites/chevrolet/sections/ParagraphList.tsx"
-          ],
-          "default": "deco-sites/chevrolet/sections/ParagraphList.tsx"
         }
       }
     },
@@ -12324,27 +12158,6 @@
             "deco-sites/chevrolet/sections/ProductDetailsPage.tsx"
           ],
           "default": "deco-sites/chevrolet/sections/ProductDetailsPage.tsx"
-        }
-      }
-    },
-    "ZGVjby1zaXRlcy9jaGV2cm9sZXQvc2VjdGlvbnMvU2ltcGxlVGV4dExpc3QudHN4": {
-      "title": "deco-sites/chevrolet/sections/SimpleTextList.tsx",
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9jaGV2cm9sZXQvc2VjdGlvbnMvU2ltcGxlVGV4dExpc3QudHN4@Props"
-        }
-      ],
-      "required": [
-        "__resolveType"
-      ],
-      "properties": {
-        "__resolveType": {
-          "type": "string",
-          "enum": [
-            "deco-sites/chevrolet/sections/SimpleTextList.tsx"
-          ],
-          "default": "deco-sites/chevrolet/sections/SimpleTextList.tsx"
         }
       }
     },
@@ -13649,19 +13462,10 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9jaGV2cm9sZXQvc2VjdGlvbnMvSGVhZGVyLnRzeA=="
         },
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9jaGV2cm9sZXQvc2VjdGlvbnMvSGVyby50c3g="
-        },
-        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9jaGV2cm9sZXQvc2VjdGlvbnMvSG9tZURldGFpbHMudHN4"
         },
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9jaGV2cm9sZXQvc2VjdGlvbnMvUGFyYWdyYXBoTGlzdC50c3g="
-        },
-        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9jaGV2cm9sZXQvc2VjdGlvbnMvUHJvZHVjdERldGFpbHNQYWdlLnRzeA=="
-        },
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9jaGV2cm9sZXQvc2VjdGlvbnMvU2ltcGxlVGV4dExpc3QudHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9jaGV2cm9sZXQvc2VjdGlvbnMvU3RvcmVEYXRhLnRzeA=="

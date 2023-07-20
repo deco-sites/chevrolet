@@ -8,16 +8,26 @@ import { Head } from "$fresh/runtime.ts";
 
 import Gallery from "deco-sites/chevrolet/components/ui/Gallery.tsx";
 
-export interface StoreInformations {
+export interface Profile {
+  /** @title id */
+  /** @description Store id on Leadfy pannel */
   idLoja: string;
+  whatsappNumber: string;
   logo: LiveImage;
-  banner: LiveImage;
-  bannerAlt: string;
-  title: string;
-  subtitle: string;
-  text: string;
-  whatsapp: string;
+}
+
+export interface StoreInformations {
   label: string;
+  profile: Profile;
+  banner?: {
+    image?: LiveImage;
+    altText?: string;  
+  }
+  content: {
+    title: string;
+    subtitle: string;
+    text: string;
+  }
 }
 
 export interface Props {
@@ -27,39 +37,42 @@ export interface Props {
 export default function HeadingHome(
   { store, vehicles }: SectionProps<typeof loader>,
 ) {
-  console.log(vehicles);
   if (store) {
-    const { idLoja, title, subtitle, text, logo, banner, bannerAlt, whatsapp } =
+    const { profile, banner, content } =
       store;
     return (
       <>
         <Head>
-          <title>{title}</title>
-          <link rel="icon" type="image/png" href={logo}></link>
+          <title>{content.title}</title>
+          <link rel="icon" type="image/png" href={profile.logo}></link>
         </Head>
         <div>
           <div class="container px-12 py-7 flex justify-center">
             <Image
-              src={logo}
+              src={profile.logo}
               width={200}
-              alt={title}
+              alt={content.title}
             />
           </div>
-          <div class="container">
-            <Image
-              src={banner}
-              width={1100}
-              alt={bannerAlt}
-            />
-          </div>
+          {
+            banner && banner.image && (
+              <div class="container">
+                <Image
+                  src={banner.image}
+                  width={1100}
+                  alt={banner.altText || content.title}
+                />
+              </div>
+            )
+          }
           <div class="container text-center">
-            <h1 class="text-[44px] my-3 louis-bold text-black">{title}</h1>
-            <h2 class="text-[30px]">{subtitle}</h2>
+            <h1 class="text-[44px] my-3 louis-bold text-black">{content.title}</h1>
+            <h2 class="text-[30px]">{content.subtitle}</h2>
             <p class="text-[20px] louis-bold text-[#1a1b1f] opacity-60">
-              {text}
+              {content.text}
             </p>
           </div>
-          <Gallery vehicles={vehicles} idLoja={idLoja} whatsapp={whatsapp} />
+          <Gallery vehicles={vehicles} idLoja={profile.idLoja} whatsapp={profile.whatsappNumber} />
         </div>
       </>
     );
@@ -78,8 +91,8 @@ export const loader = async (
   { stores = [] }: Props,
   req: Request,
 ) => {
-  const idAtUrl = req.url.split("/store/")[1];
-  const store = stores.find(({ idLoja }) => idLoja == idAtUrl);
+  const idAtUrl = req.url.split("/").pop();
+  const store = stores.find(({ profile }) => profile?.idLoja == idAtUrl);
 
   const response = await fetch(
     `https://autogestor-dealers.s3.us-west-2.amazonaws.com/${idAtUrl}/portals/dealersites/vehicles.json`,
