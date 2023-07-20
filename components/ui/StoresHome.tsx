@@ -12,8 +12,8 @@ export interface Profile {
   /** @title id */
   /** @description Store id on Leadfy pannel */
   idLoja: string;
-  logo: LiveImage;
   whatsappNumber: string;
+  logo: LiveImage;
 }
 
 export interface StoreInformations {
