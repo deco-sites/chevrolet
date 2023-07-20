@@ -12,11 +12,13 @@ import * as $$$$$$$$1 from "./sections/Gallery.tsx";
 import * as $$$$$$$$2 from "./sections/Header.tsx";
 import * as $$$$$$$$3 from "./sections/HeadingHome.tsx";
 import * as $$$$$$$$4 from "./sections/Hero.tsx";
-import * as $$$$$$$$5 from "./sections/ParagraphList.tsx";
-import * as $$$$$$$$6 from "./sections/ProductDetailsPage.tsx";
-import * as $$$$$$$$7 from "./sections/SimpleTextList.tsx";
-import * as $$$$$$$$8 from "./sections/StoresHome.tsx";
-import * as $$$$$$$$9 from "./sections/Theme.tsx";
+import * as $$$$$$$$5 from "./sections/HomeDetails.tsx";
+import * as $$$$$$$$6 from "./sections/ParagraphList.tsx";
+import * as $$$$$$$$7 from "./sections/ProductDetailsPage.tsx";
+import * as $$$$$$$$8 from "./sections/SimpleTextList.tsx";
+import * as $$$$$$$$9 from "./sections/StoreData.tsx";
+import * as $$$$$$$$10 from "./sections/StoresHome.tsx";
+import * as $$$$$$$$11 from "./sections/Theme.tsx";
 import * as $live_workflows from "$live/routes/live/workflows/run.ts";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
@@ -198,11 +200,13 @@ const manifest = {
     "deco-sites/chevrolet/sections/Header.tsx": $$$$$$$$2,
     "deco-sites/chevrolet/sections/HeadingHome.tsx": $$$$$$$$3,
     "deco-sites/chevrolet/sections/Hero.tsx": $$$$$$$$4,
-    "deco-sites/chevrolet/sections/ParagraphList.tsx": $$$$$$$$5,
-    "deco-sites/chevrolet/sections/ProductDetailsPage.tsx": $$$$$$$$6,
-    "deco-sites/chevrolet/sections/SimpleTextList.tsx": $$$$$$$$7,
-    "deco-sites/chevrolet/sections/StoresHome.tsx": $$$$$$$$8,
-    "deco-sites/chevrolet/sections/Theme.tsx": $$$$$$$$9,
+    "deco-sites/chevrolet/sections/HomeDetails.tsx": $$$$$$$$5,
+    "deco-sites/chevrolet/sections/ParagraphList.tsx": $$$$$$$$6,
+    "deco-sites/chevrolet/sections/ProductDetailsPage.tsx": $$$$$$$$7,
+    "deco-sites/chevrolet/sections/SimpleTextList.tsx": $$$$$$$$8,
+    "deco-sites/chevrolet/sections/StoreData.tsx": $$$$$$$$9,
+    "deco-sites/chevrolet/sections/StoresHome.tsx": $$$$$$$$10,
+    "deco-sites/chevrolet/sections/Theme.tsx": $$$$$$$$11,
     "deco-sites/std/sections/Analytics.tsx": i2$$$$$5,
     "deco-sites/std/sections/configButterCMS.global.tsx": i2$$$$$6,
     "deco-sites/std/sections/configNuvemShop.tsx": i2$$$$$7,

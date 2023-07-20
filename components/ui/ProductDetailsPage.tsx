@@ -29,7 +29,7 @@ export default function ProductDetailsPage({ page }: Props) {
                 if (idx == 1) {
                   return (
                     <>
-                      <div>
+                      <div class="block sm:hidden">
                         <Form vehicle={vehicle} />
                       </div>
                       <Image

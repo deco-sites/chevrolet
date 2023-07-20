@@ -85,9 +85,11 @@
               "deco-sites/chevrolet/sections/Gallery.tsx",
               "deco-sites/chevrolet/sections/Header.tsx",
               "deco-sites/chevrolet/sections/Hero.tsx",
+              "deco-sites/chevrolet/sections/HomeDetails.tsx",
               "deco-sites/chevrolet/sections/ParagraphList.tsx",
               "deco-sites/chevrolet/sections/ProductDetailsPage.tsx",
               "deco-sites/chevrolet/sections/SimpleTextList.tsx",
+              "deco-sites/chevrolet/sections/StoreData.tsx",
               "deco-sites/chevrolet/sections/StoresHome.tsx",
               "deco-sites/chevrolet/sections/Theme.tsx",
               "deco-sites/std/sections/Analytics.tsx",
@@ -8581,6 +8583,59 @@
       "required": [],
       "title": "deco-sites/chevrolet/sections/Hero.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9jaGV2cm9sZXQvY29tcG9uZW50cy91aS9Ib21lRGV0YWlscy50c3g=@StoreInformations": {
+      "type": "object",
+      "properties": {
+        "idLoja": {
+          "type": "string",
+          "title": "Id Loja"
+        },
+        "logo": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Logo"
+        },
+        "banner": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Banner"
+        },
+        "bannerAlt": {
+          "type": "string",
+          "title": "Banner Alt"
+        },
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "subtitle": {
+          "type": "string",
+          "title": "Subtitle"
+        },
+        "text": {
+          "type": "string",
+          "title": "Text"
+        },
+        "whatsapp": {
+          "type": "string",
+          "title": "Whatsapp"
+        },
+        "label": {
+          "type": "string",
+          "title": "Label"
+        }
+      },
+      "required": [
+        "idLoja",
+        "logo",
+        "banner",
+        "bannerAlt",
+        "title",
+        "subtitle",
+        "text",
+        "whatsapp",
+        "label"
+      ],
+      "title": "StoreInformations"
+    },
     "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML": {
       "type": "string",
       "format": "html",
@@ -8705,6 +8760,79 @@
       },
       "required": [],
       "title": "deco-sites/chevrolet/sections/SimpleTextList.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9jaGV2cm9sZXQvY29tcG9uZW50cy91aS9TdG9yZURhdGEudHN4@StoreInformations": {
+      "type": "object",
+      "properties": {
+        "idLoja": {
+          "type": "string",
+          "title": "Id Loja"
+        },
+        "logo": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Logo"
+        },
+        "banner": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Banner"
+        },
+        "bannerAlt": {
+          "type": "string",
+          "title": "Banner Alt"
+        },
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "subtitle": {
+          "type": "string",
+          "title": "Subtitle"
+        },
+        "text": {
+          "type": "string",
+          "title": "Text"
+        },
+        "whatsapp": {
+          "type": "string",
+          "title": "Whatsapp"
+        },
+        "label": {
+          "type": "string",
+          "title": "Label"
+        }
+      },
+      "required": [
+        "idLoja",
+        "logo",
+        "banner",
+        "bannerAlt",
+        "title",
+        "subtitle",
+        "text",
+        "whatsapp",
+        "label"
+      ],
+      "title": "StoreInformations"
+    },
+    "ZGVjby1zaXRlcy9jaGV2cm9sZXQvY29tcG9uZW50cy91aS9TdG9yZURhdGEudHN4@StoreInformations[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9jaGV2cm9sZXQvY29tcG9uZW50cy91aS9TdG9yZURhdGEudHN4@StoreInformations"
+      },
+      "title": "StoreInformations[]"
+    },
+    "ZGVjby1zaXRlcy9jaGV2cm9sZXQvY29tcG9uZW50cy91aS9TdG9yZURhdGEudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "stores": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jaGV2cm9sZXQvY29tcG9uZW50cy91aS9TdG9yZURhdGEudHN4@StoreInformations[]",
+          "title": "Stores"
+        }
+      },
+      "required": [
+        "stores"
+      ],
+      "title": "deco-sites/chevrolet/components/ui/StoreData.tsx@Props"
     },
     "ZGVjby1zaXRlcy9jaGV2cm9sZXQvY29tcG9uZW50cy91aS9TdG9yZXNIb21lLnRzeA==@StoreInformations": {
       "type": "object",
@@ -12141,6 +12269,22 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9jaGV2cm9sZXQvc2VjdGlvbnMvSG9tZURldGFpbHMudHN4": {
+      "title": "deco-sites/chevrolet/sections/HomeDetails.tsx",
+      "type": "object",
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/chevrolet/sections/HomeDetails.tsx"
+          ],
+          "default": "deco-sites/chevrolet/sections/HomeDetails.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9jaGV2cm9sZXQvc2VjdGlvbnMvUGFyYWdyYXBoTGlzdC50c3g=": {
       "title": "deco-sites/chevrolet/sections/ParagraphList.tsx",
       "type": "object",
@@ -12201,6 +12345,27 @@
             "deco-sites/chevrolet/sections/SimpleTextList.tsx"
           ],
           "default": "deco-sites/chevrolet/sections/SimpleTextList.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9jaGV2cm9sZXQvc2VjdGlvbnMvU3RvcmVEYXRhLnRzeA==": {
+      "title": "deco-sites/chevrolet/sections/StoreData.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jaGV2cm9sZXQvY29tcG9uZW50cy91aS9TdG9yZURhdGEudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/chevrolet/sections/StoreData.tsx"
+          ],
+          "default": "deco-sites/chevrolet/sections/StoreData.tsx"
         }
       }
     },
@@ -13487,6 +13652,9 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9jaGV2cm9sZXQvc2VjdGlvbnMvSGVyby50c3g="
         },
         {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jaGV2cm9sZXQvc2VjdGlvbnMvSG9tZURldGFpbHMudHN4"
+        },
+        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9jaGV2cm9sZXQvc2VjdGlvbnMvUGFyYWdyYXBoTGlzdC50c3g="
         },
         {
@@ -13494,6 +13662,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9jaGV2cm9sZXQvc2VjdGlvbnMvU2ltcGxlVGV4dExpc3QudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jaGV2cm9sZXQvc2VjdGlvbnMvU3RvcmVEYXRhLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9jaGV2cm9sZXQvc2VjdGlvbnMvU3RvcmVzSG9tZS50c3g="
