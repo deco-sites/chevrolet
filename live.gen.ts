@@ -15,7 +15,8 @@ import * as $$$$$$$$4 from "./sections/Hero.tsx";
 import * as $$$$$$$$5 from "./sections/ParagraphList.tsx";
 import * as $$$$$$$$6 from "./sections/ProductDetailsPage.tsx";
 import * as $$$$$$$$7 from "./sections/SimpleTextList.tsx";
-import * as $$$$$$$$8 from "./sections/Theme.tsx";
+import * as $$$$$$$$8 from "./sections/StoresHome.tsx";
+import * as $$$$$$$$9 from "./sections/Theme.tsx";
 import * as $live_workflows from "$live/routes/live/workflows/run.ts";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
@@ -50,6 +51,7 @@ import * as i2$$$$$$$$2 from "$live/matchers/MatchDate.ts";
 import * as i2$$$$$$$$3 from "$live/matchers/MatchDevice.ts";
 import * as i2$$$$$$$$4 from "$live/matchers/MatchEnvironment.ts";
 import * as i2$$$$$$$$5 from "$live/matchers/MatchHost.ts";
+import * as i1$$$$$6 from "$live/matchers/MatchLocation.ts";
 import * as i2$$$$$$$$6 from "$live/matchers/MatchMulti.ts";
 import * as i2$$$$$$$$7 from "$live/matchers/MatchRandom.ts";
 import * as i2$$$$$$$$8 from "$live/matchers/MatchSite.ts";
@@ -199,7 +201,8 @@ const manifest = {
     "deco-sites/chevrolet/sections/ParagraphList.tsx": $$$$$$$$5,
     "deco-sites/chevrolet/sections/ProductDetailsPage.tsx": $$$$$$$$6,
     "deco-sites/chevrolet/sections/SimpleTextList.tsx": $$$$$$$$7,
-    "deco-sites/chevrolet/sections/Theme.tsx": $$$$$$$$8,
+    "deco-sites/chevrolet/sections/StoresHome.tsx": $$$$$$$$8,
+    "deco-sites/chevrolet/sections/Theme.tsx": $$$$$$$$9,
     "deco-sites/std/sections/Analytics.tsx": i2$$$$$5,
     "deco-sites/std/sections/configButterCMS.global.tsx": i2$$$$$6,
     "deco-sites/std/sections/configNuvemShop.tsx": i2$$$$$7,
@@ -232,6 +235,7 @@ const manifest = {
     "$live/matchers/MatchDevice.ts": i2$$$$$$$$3,
     "$live/matchers/MatchEnvironment.ts": i2$$$$$$$$4,
     "$live/matchers/MatchHost.ts": i2$$$$$$$$5,
+    "$live/matchers/MatchLocation.ts": i1$$$$$6,
     "$live/matchers/MatchMulti.ts": i2$$$$$$$$6,
     "$live/matchers/MatchRandom.ts": i2$$$$$$$$7,
     "$live/matchers/MatchSite.ts": i2$$$$$$$$8,

@@ -9,7 +9,7 @@ export interface Props {
   slug: RequestURLParam;
 }
 
-export default async function searchInstaFeed(
+export default async function searchPdp(
   props: Props,
 ): Promise<PdpReturn> {
   const { slug, idloja } = props;

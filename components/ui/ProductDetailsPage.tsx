@@ -8,6 +8,8 @@ import type {
 
 import Image from "deco-sites/std/components/Image.tsx";
 
+import { Head } from "$fresh/runtime.ts";
+
 export interface Props {
   page: LoaderReturnType<PdpReturn | null>;
 }
@@ -16,23 +18,41 @@ export default function ProductDetailsPage({ page }: Props) {
   if (page) {
     const vehicle = page.result[0];
     return (
-      <div>
-        <div class="container flex">
-          <div class="w-1/2">
-            {vehicle.images.map((image) => {
-              return (
-                <Image
-                  src={image}
-                  width={550}
-                />
-              );
-            })}
-          </div>
-          <div class="w-1/2 max-w-[450px] mx-auto pt-10">
-            <Form vehicle={vehicle} />
+      <>
+        <Head>
+          <title>{vehicle.model.toUpperCase()}</title>
+        </Head>
+        <div>
+          <div class="container flex">
+            <div class="w-full sm:w-1/2 px-5 sm:px-0">
+              {vehicle.images.map((image, idx) => {
+                if (idx == 1) {
+                  return (
+                    <>
+                      <div>
+                        <Form vehicle={vehicle} />
+                      </div>
+                      <Image
+                        src={image}
+                        width={550}
+                      />
+                    </>
+                  );
+                }
+                return (
+                  <Image
+                    src={image}
+                    width={550}
+                  />
+                );
+              })}
+            </div>
+            <div class="w-1/2 max-w-[450px] mx-auto pt-10 sticky top-0 self-start hidden sm:block">
+              <Form vehicle={vehicle} />
+            </div>
           </div>
         </div>
-      </div>
+      </>
     );
   }
 
