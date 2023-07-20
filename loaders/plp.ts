@@ -4,8 +4,6 @@ import type { RequestURLParam } from "deco-sites/std/functions/requestToParam.ts
 export default async function searchPlp(
   req: Request,
 ): Promise<PlpReturn> {
-  console.log(req);
-
   const idloja = "5601";
 
   const response = await fetch(

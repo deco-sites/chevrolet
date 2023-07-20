@@ -22,8 +22,9 @@ export interface StoreInformations {
 }
 
 export default function StoresHome(
-  { store, vehicles }: { store: StoreInformations; vehicles: Vehicles },
+  { store, vehicles }: SectionProps<typeof loader>,
 ) {
+  console.log(store.idLoja);
   if (store) {
     const { idLoja, title, subtitle, text, logo, banner, bannerAlt, whatsapp } =
       store;
@@ -69,3 +70,16 @@ export default function StoresHome(
     </div>
   );
 }
+
+export const loader = async (
+  { store }: { store: StoreInformations },
+  req: Request,
+) => {
+  console.log(store);
+  const response = await fetch(
+    `https://autogestor-dealers.s3.us-west-2.amazonaws.com/${store.idLoja}/portals/dealersites/vehicles.json`,
+  );
+  const vehicles = await response.json();
+  console.log(vehicles);
+  return { store, vehicles };
+};

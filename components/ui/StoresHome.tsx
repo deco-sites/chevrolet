@@ -24,10 +24,9 @@ export interface Props {
   stores: StoreInformations[];
 }
 
-export default function HeadingHome(
+export default function StoresHome(
   { store, vehicles }: SectionProps<typeof loader>,
 ) {
-  console.log(vehicles);
   if (store) {
     const { idLoja, title, subtitle, text, logo, banner, bannerAlt, whatsapp } =
       store;

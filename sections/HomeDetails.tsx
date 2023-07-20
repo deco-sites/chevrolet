@@ -1,1 +1,4 @@
-export { default } from "deco-sites/chevrolet/components/ui/HomeDetails.tsx";
+export {
+  default,
+  loader,
+} from "deco-sites/chevrolet/components/ui/HomeDetails.tsx";
